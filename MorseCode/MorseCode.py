@@ -1,5 +1,7 @@
 
-def encode:
+plaintext = input("Enter plaintext ")
+
+def encode(message):
     return
 
 
