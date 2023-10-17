@@ -1,10 +1,11 @@
 
 plaintext = input("Enter plaintext ")
-
+plaintext = plaintext.upper()
+print(plaintext)
 def encode(message):
     return
 
-
+#dictionary of code 
 char_to_dots = {
   'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
   'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
