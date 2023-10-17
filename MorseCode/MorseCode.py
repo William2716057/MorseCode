@@ -1,9 +1,10 @@
 
 plaintext = input("Enter plaintext ")
 plaintext = plaintext.upper()
-print(plaintext)
+#print(plaintext)
+
 def encode(message):
-    for character in plaintext:
+    for character in message:
         if character in charToDots:
             print(charToDots[character], end=' ')
         else:
@@ -24,3 +25,4 @@ charToDots = {
   '-': '-....-', '+': '.-.-.', '"': '.-..-.', '?': '..--..', '/': '-..-.'
 }
 
+encode(plaintext)
