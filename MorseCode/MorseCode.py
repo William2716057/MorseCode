@@ -3,10 +3,15 @@ plaintext = input("Enter plaintext ")
 plaintext = plaintext.upper()
 print(plaintext)
 def encode(message):
+    for character in plaintext:
+        if character in charToDots:
+            print(charToDots[character], end=' ')
+        else:
+            print(character, end=' ')
     return
 
 #dictionary of code 
-char_to_dots = {
+charToDots = {
   'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
   'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
   'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
@@ -18,3 +23,4 @@ char_to_dots = {
   ':': '---...', ',': '--..--', '=': '-...-', '!': '-.-.--', '.': '.-.-.-',
   '-': '-....-', '+': '.-.-.', '"': '.-..-.', '?': '..--..', '/': '-..-.'
 }
+
